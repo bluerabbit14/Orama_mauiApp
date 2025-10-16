@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Orama.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Orama.Views"
+    FlyoutBehavior="Flyout"
+    Title="Orama">
+    
+    <!--here we define the implicit route-->
+    <TabBar>
+        <ShellContent Title="Home" Icon="dotnet_bot.png"
+                      ContentTemplate="{DataTemplate views:Dashboard}" 
+                      Route="Dashboard"/>
+        <ShellContent Title="Setting"  Icon="dotnet_bot.png"
+                      ContentTemplate="{DataTemplate views:Setting}" 
+                      Route="Setting"/>
+    </TabBar>
+
+</Shell>

@@ -1,0 +1,17 @@
+<Shell
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Orama.Views"
+    x:Class="Orama.AuthenticationShell"
+    Shell.FlyoutBehavior="Disabled">
+
+    <!-- Login Page -->
+    <ShellContent Route="Login" ContentTemplate="{DataTemplate views:Login}"></ShellContent>
+
+    <!-- Signup Page -->
+    <ShellContent Route="Signup" ContentTemplate="{DataTemplate views:Signup}"></ShellContent>
+
+    <!-- Forgot Password Page -->
+    <ShellContent Route="ForgotPassword" ContentTemplate="{DataTemplate views:ForgotPassword}"></ShellContent>
+
+</Shell>
