@@ -4,6 +4,47 @@
         <name>Orama</name>
     </assembly>
     <members>
+        <member name="T:Orama.ViewModels.ForgotPasswordViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Orama.ViewModels.ForgotPasswordViewModel.IsLoading">
+            <inheritdoc cref="F:Orama.ViewModels.ForgotPasswordViewModel._isLoading"/>
+        </member>
+        <member name="P:Orama.ViewModels.ForgotPasswordViewModel.Email">
+            <inheritdoc cref="F:Orama.ViewModels.ForgotPasswordViewModel._email"/>
+        </member>
+        <member name="P:Orama.ViewModels.ForgotPasswordViewModel.ErrorMessage">
+            <inheritdoc cref="F:Orama.ViewModels.ForgotPasswordViewModel._errorMessage"/>
+        </member>
+        <member name="P:Orama.ViewModels.ForgotPasswordViewModel.SuccessMessage">
+            <inheritdoc cref="F:Orama.ViewModels.ForgotPasswordViewModel._successMessage"/>
+        </member>
+        <member name="M:Orama.ViewModels.ForgotPasswordViewModel.OnEmailChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:Orama.ViewModels.ForgotPasswordViewModel.Email"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Orama.ViewModels.ForgotPasswordViewModel.Email"/> is changed.</remarks>
+        </member>
+        <member name="F:Orama.ViewModels.ForgotPasswordViewModel.sendResetLinkCommand">
+            <summary>The backing field for <see cref="P:Orama.ViewModels.ForgotPasswordViewModel.SendResetLinkCommand"/>.</summary>
+        </member>
+        <member name="P:Orama.ViewModels.ForgotPasswordViewModel.SendResetLinkCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Orama.ViewModels.ForgotPasswordViewModel.SendResetLinkAsync"/>.</summary>
+        </member>
+        <member name="F:Orama.ViewModels.ForgotPasswordViewModel.navigateToLoginCommand">
+            <summary>The backing field for <see cref="P:Orama.ViewModels.ForgotPasswordViewModel.NavigateToLoginCommand"/>.</summary>
+        </member>
+        <member name="P:Orama.ViewModels.ForgotPasswordViewModel.NavigateToLoginCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Orama.ViewModels.ForgotPasswordViewModel.NavigateToLoginAsync"/>.</summary>
+        </member>
+        <member name="F:Orama.ViewModels.ForgotPasswordViewModel.navigateToSignupCommand">
+            <summary>The backing field for <see cref="P:Orama.ViewModels.ForgotPasswordViewModel.NavigateToSignupCommand"/>.</summary>
+        </member>
+        <member name="P:Orama.ViewModels.ForgotPasswordViewModel.NavigateToSignupCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Orama.ViewModels.ForgotPasswordViewModel.NavigateToSignupAsync"/>.</summary>
+        </member>
         <member name="T:Orama.ViewModels.LoginViewModel">
             <inheritdoc/>
             <inheritdoc/>
@@ -21,6 +62,16 @@
         </member>
         <member name="P:Orama.ViewModels.LoginViewModel.ErrorMessage">
             <inheritdoc cref="F:Orama.ViewModels.LoginViewModel._errorMessage"/>
+        </member>
+        <member name="M:Orama.ViewModels.LoginViewModel.OnUserEmailChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:Orama.ViewModels.LoginViewModel.UserEmail"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Orama.ViewModels.LoginViewModel.UserEmail"/> is changed.</remarks>
+        </member>
+        <member name="M:Orama.ViewModels.LoginViewModel.OnPasswordChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:Orama.ViewModels.LoginViewModel.Password"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Orama.ViewModels.LoginViewModel.Password"/> is changed.</remarks>
         </member>
         <member name="F:Orama.ViewModels.LoginViewModel.loginCommand">
             <summary>The backing field for <see cref="P:Orama.ViewModels.LoginViewModel.LoginCommand"/>.</summary>
@@ -40,6 +91,90 @@
         <member name="P:Orama.ViewModels.LoginViewModel.ShowSignupCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Orama.ViewModels.LoginViewModel.ShowSignupAsync"/>.</summary>
         </member>
+        <member name="T:Orama.ViewModels.SignupViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.IsLoading">
+            <inheritdoc cref="F:Orama.ViewModels.SignupViewModel._isLoading"/>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.FullName">
+            <inheritdoc cref="F:Orama.ViewModels.SignupViewModel._fullName"/>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.Email">
+            <inheritdoc cref="F:Orama.ViewModels.SignupViewModel._email"/>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.Password">
+            <inheritdoc cref="F:Orama.ViewModels.SignupViewModel._password"/>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.ConfirmPassword">
+            <inheritdoc cref="F:Orama.ViewModels.SignupViewModel._confirmPassword"/>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.PhoneNumber">
+            <inheritdoc cref="F:Orama.ViewModels.SignupViewModel._phoneNumber"/>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.AcceptTerms">
+            <inheritdoc cref="F:Orama.ViewModels.SignupViewModel._acceptTerms"/>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.ErrorMessage">
+            <inheritdoc cref="F:Orama.ViewModels.SignupViewModel._errorMessage"/>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.PasswordStrengthMessage">
+            <inheritdoc cref="F:Orama.ViewModels.SignupViewModel._passwordStrengthMessage"/>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.PasswordStrengthColor">
+            <inheritdoc cref="F:Orama.ViewModels.SignupViewModel._passwordStrengthColor"/>
+        </member>
+        <member name="M:Orama.ViewModels.SignupViewModel.OnFullNameChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:Orama.ViewModels.SignupViewModel.FullName"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Orama.ViewModels.SignupViewModel.FullName"/> is changed.</remarks>
+        </member>
+        <member name="M:Orama.ViewModels.SignupViewModel.OnEmailChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:Orama.ViewModels.SignupViewModel.Email"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Orama.ViewModels.SignupViewModel.Email"/> is changed.</remarks>
+        </member>
+        <member name="M:Orama.ViewModels.SignupViewModel.OnPasswordChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:Orama.ViewModels.SignupViewModel.Password"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Orama.ViewModels.SignupViewModel.Password"/> is changed.</remarks>
+        </member>
+        <member name="M:Orama.ViewModels.SignupViewModel.OnConfirmPasswordChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:Orama.ViewModels.SignupViewModel.ConfirmPassword"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Orama.ViewModels.SignupViewModel.ConfirmPassword"/> is changed.</remarks>
+        </member>
+        <member name="M:Orama.ViewModels.SignupViewModel.OnPhoneNumberChanged(System.String)">
+            <summary>Executes the logic for when <see cref="P:Orama.ViewModels.SignupViewModel.PhoneNumber"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Orama.ViewModels.SignupViewModel.PhoneNumber"/> is changed.</remarks>
+        </member>
+        <member name="M:Orama.ViewModels.SignupViewModel.OnAcceptTermsChanged(System.Boolean)">
+            <summary>Executes the logic for when <see cref="P:Orama.ViewModels.SignupViewModel.AcceptTerms"/> just changed.</summary>
+            <param name="value">The new property value that was set.</param>
+            <remarks>This method is invoked right after the value of <see cref="P:Orama.ViewModels.SignupViewModel.AcceptTerms"/> is changed.</remarks>
+        </member>
+        <member name="F:Orama.ViewModels.SignupViewModel.signupCommand">
+            <summary>The backing field for <see cref="P:Orama.ViewModels.SignupViewModel.SignupCommand"/>.</summary>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.SignupCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Orama.ViewModels.SignupViewModel.SignupAsync"/>.</summary>
+        </member>
+        <member name="F:Orama.ViewModels.SignupViewModel.showTermsCommand">
+            <summary>The backing field for <see cref="P:Orama.ViewModels.SignupViewModel.ShowTermsCommand"/>.</summary>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.ShowTermsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Orama.ViewModels.SignupViewModel.ShowTermsAsync"/>.</summary>
+        </member>
+        <member name="F:Orama.ViewModels.SignupViewModel.showPrivacyCommand">
+            <summary>The backing field for <see cref="P:Orama.ViewModels.SignupViewModel.ShowPrivacyCommand"/>.</summary>
+        </member>
+        <member name="P:Orama.ViewModels.SignupViewModel.ShowPrivacyCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Orama.ViewModels.SignupViewModel.ShowPrivacyAsync"/>.</summary>
+        </member>
         <member name="T:Orama.Resource">
             <summary>
             Android Resource Designer class.
@@ -55,14 +190,38 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsLoading">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsLoading" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.SuccessMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "SuccessMessage" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.UserEmail">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "UserEmail" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Password">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Password" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ErrorMessage">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ErrorMessage" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.FullName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "FullName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ConfirmPassword">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ConfirmPassword" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PhoneNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PhoneNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.AcceptTerms">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "AcceptTerms" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PasswordStrengthMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PasswordStrengthMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.PasswordStrengthColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "PasswordStrengthColor" generated properties.</summary>
         </member>
         <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
             <summary>
@@ -73,14 +232,38 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsLoading">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsLoading" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Email">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Email" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ErrorMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ErrorMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.SuccessMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "SuccessMessage" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.UserEmail">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "UserEmail" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Password">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Password" generated properties.</summary>
         </member>
-        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ErrorMessage">
-            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ErrorMessage" generated properties.</summary>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.FullName">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "FullName" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ConfirmPassword">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ConfirmPassword" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PhoneNumber">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PhoneNumber" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.AcceptTerms">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "AcceptTerms" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PasswordStrengthMessage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PasswordStrengthMessage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.PasswordStrengthColor">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "PasswordStrengthColor" generated properties.</summary>
         </member>
     </members>
 </doc>
